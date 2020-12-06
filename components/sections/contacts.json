@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_sections_contacts",
+  "info": {
+    "name": "Contacts",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "email": {
+      "type": "email",
+      "default": "m.tukhtarov@gmail.com"
+    },
+    "phone": {
+      "type": "string",
+      "default": "+7-901-594-81-13",
+      "unique": false,
+      "regex": "^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\\s\\./0-9]*$"
+    },
+    "instagram": {
+      "type": "string",
+      "default": "https://www.instagram.com/",
+      "unique": false
+    }
+  }
+}

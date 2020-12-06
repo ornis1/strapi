@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "name": "Home",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Slider": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.slider"
+    },
+    "payment": {
+      "type": "richtext"
+    },
+    "delivery": {
+      "type": "richtext"
+    },
+    "categoryCard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.category-card"
+    }
+  }
+}

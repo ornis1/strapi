@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_elements_sliders",
+  "info": {
+    "name": "Slider",
+    "icon": "arrows-alt-h",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Title"
+    },
+    "subtitle": {
+      "type": "string",
+      "default": "Subtitle"
+    },
+    "btnText": {
+      "type": "string",
+      "default": "Кнопочка"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

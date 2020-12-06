@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_elements_categories",
+  "info": {
+    "name": "Category",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "category": {
+      "model": "category"
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "private": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

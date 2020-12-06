@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "catalogs",
+  "info": {
+    "name": "Catalog",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Categories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.category",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "kind": "singleType",
+  "collectionName": "globals",
+  "info": {
+    "name": "Global"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "siteLanguage": {
+      "type": "string",
+      "default": "ru",
+      "required": true
+    },
+    "siteName": {
+      "type": "string",
+      "default": "KappaKeppo",
+      "required": true
+    },
+    "contacts": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.contacts",
+      "required": true
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "favicon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}
