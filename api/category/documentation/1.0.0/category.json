@@ -575,6 +575,9 @@
                 "name": {
                   "type": "string"
                 },
+                "qty": {
+                  "type": "integer"
+                },
                 "published_at": {
                   "type": "string"
                 },

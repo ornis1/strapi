@@ -50,6 +50,10 @@
     "name": {
       "type": "string",
       "required": true
+    },
+    "qty": {
+      "type": "integer",
+      "default": 0
     }
   }
 }

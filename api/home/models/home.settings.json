@@ -25,7 +25,9 @@
     "categoryCard": {
       "type": "component",
       "repeatable": true,
-      "component": "elements.category-card"
+      "component": "elements.category-card",
+      "max": 2,
+      "min": 2
     }
   }
 }

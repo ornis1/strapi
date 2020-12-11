@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "blogs",
   "info": {
-    "name": "Blogs"
+    "name": "Blogs",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -12,7 +13,8 @@
   "attributes": {
     "title": {
       "type": "string",
-      "default": "Blog title"
+      "default": "Blog title",
+      "unique": true
     },
     "image": {
       "model": "file",
@@ -21,10 +23,20 @@
         "images"
       ],
       "plugin": "upload",
-      "required": false
+      "required": true
     },
     "content": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
+    "btnText": {
+      "type": "string",
+      "default": "Read more",
+      "required": true
     }
   }
 }

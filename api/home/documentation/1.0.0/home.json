@@ -512,7 +512,9 @@
                   }
                 }
               }
-            }
+            },
+            "minItems": 2,
+            "maxItems": 2
           },
           "published_at": {
             "type": "string",
@@ -716,7 +718,9 @@
                   }
                 }
               }
-            }
+            },
+            "minItems": 2,
+            "maxItems": 2
           },
           "published_at": {
             "type": "string",

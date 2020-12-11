@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "product_pages",
+  "info": {
+    "name": "ProductPage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "recomended": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.product",
+      "required": true
+    }
+  }
+}

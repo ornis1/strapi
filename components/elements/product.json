@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_elements_products",
+  "info": {
+    "name": "Product",
+    "icon": "atlas",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "product": {
+      "model": "product"
+    },
+    "name": {
+      "type": "string",
+      "default": "product",
+      "required": true
+    }
+  }
+}
