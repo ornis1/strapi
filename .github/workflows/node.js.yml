@@ -23,6 +23,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: yarn i
-      - run: yarn run build --if-present
+      - run: yarn
+      - run: yarn build --if-present
       - run: pm2 reload back
