@@ -5,13 +5,12 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ production ]
+    branches: [production, main]
   pull_request:
-    branches: [ production ]
+    branches: [production, main]
 
 jobs:
   build:
-
     runs-on: self-hosted
 
     strategy:
@@ -19,14 +18,11 @@ jobs:
         node-version: [12.x, 14.x]
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: Install dependencies
-    - run: yarn i
-    - name: Build project
-    - run: yarn run build --if-present
-    - name: Reload pm2 process
-    - run: pm2 reload back
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: yarn i
+      - run: yarn run build --if-present
+      - run: pm2 reload back
