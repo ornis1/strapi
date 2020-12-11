@@ -317,7 +317,8 @@
     "schemas": {
       "Privacy-policy": {
         "required": [
-          "id"
+          "id",
+          "value"
         ],
         "properties": {
           "id": {
@@ -329,7 +330,9 @@
           "seo": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "title",
+              "description"
             ],
             "properties": {
               "id": {
@@ -417,6 +420,9 @@
         }
       },
       "NewPrivacy-policy": {
+        "required": [
+          "value"
+        ],
         "properties": {
           "value": {
             "type": "string"
@@ -424,7 +430,9 @@
           "seo": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "title",
+              "description"
             ],
             "properties": {
               "id": {

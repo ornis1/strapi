@@ -517,6 +517,7 @@
       "Blogs": {
         "required": [
           "id",
+          "title",
           "image",
           "content",
           "slug",
@@ -615,6 +616,7 @@
       },
       "NewBlogs": {
         "required": [
+          "title",
           "content",
           "slug",
           "btnText"

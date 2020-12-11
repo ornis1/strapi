@@ -2,15 +2,18 @@
   "collectionName": "components_meta_seos",
   "info": {
     "name": "seo",
-    "icon": "robot"
+    "icon": "robot",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "shareImage": {
       "model": "file",
