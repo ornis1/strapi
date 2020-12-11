@@ -25,8 +25,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Install dependencies
-    - run: yarn i
+      run: yarn i
     - name: Build project
-    - run: yarn run build --if-present
+      run: yarn run build --if-present
     - name: Reload pm2 process
-    - run: pm2 reload back
+      run: pm2 reload back
