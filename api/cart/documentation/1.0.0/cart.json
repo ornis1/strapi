@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/orders": {
+    "/cart": {
       "get": {
         "deprecated": false,
-        "description": "Find all the orders's records",
+        "description": "Find all the cart's records",
         "responses": {
           "200": {
-            "description": "Retrieve orders document(s)",
+            "description": "Retrieve cart document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Orders"
+                    "$ref": "#/components/schemas/Cart"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Orders"
+          "Cart"
         ],
         "parameters": [
           {
@@ -192,198 +192,16 @@
           }
         ]
       },
-      "post": {
-        "deprecated": false,
-        "description": "Create a new orders record",
-        "responses": {
-          "200": {
-            "description": "Retrieve orders document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Orders"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Orders"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewOrders"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/orders/count": {
-      "get": {
-        "deprecated": false,
-        "description": "Retrieve the numver of orders documents",
-        "responses": {
-          "200": {
-            "description": "Retrieve orders document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "count": {
-                      "type": "integer"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Orders"
-        ],
-        "parameters": []
-      }
-    },
-    "/orders/{id}": {
-      "get": {
-        "deprecated": false,
-        "description": "Find one orders record",
-        "responses": {
-          "200": {
-            "description": "Retrieve orders document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Orders"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Orders"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
       "put": {
         "deprecated": false,
-        "description": "Update a single orders record",
+        "description": "Update a single cart record",
         "responses": {
           "200": {
-            "description": "Retrieve orders document(s)",
+            "description": "Retrieve cart document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Orders"
+                  "$ref": "#/components/schemas/Cart"
                 }
               }
             }
@@ -421,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Orders"
+          "Cart"
         ],
         "requestBody": {
           "description": "",
@@ -429,30 +247,19 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewOrders"
+                "$ref": "#/components/schemas/NewCart"
               }
             }
           }
         },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
+        "parameters": []
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single orders record",
+        "description": "Delete a single cart record",
         "responses": {
           "200": {
-            "description": "deletes a single orders based on the ID supplied",
+            "description": "deletes a single cart based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,47 +302,31 @@
         },
         "summary": "",
         "tags": [
-          "Orders"
+          "Cart"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
+        "parameters": []
       }
     }
   },
   "components": {
     "schemas": {
-      "Orders": {
+      "Cart": {
         "required": [
           "id",
           "email",
-          "fullname",
-          "products"
+          "emailFrom"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "amount": {
-            "type": "number"
-          },
           "email": {
-            "type": "string"
+            "type": "string",
+            "default": "margarita.egorycheva@gmail.com"
           },
-          "fullname": {
-            "type": "string"
-          },
-          "products": {
-            "type": "object"
+          "emailFrom": {
+            "type": "string",
+            "default": "m.tukhtarov@gmail.com"
           },
           "published_at": {
             "type": "string",
@@ -543,24 +334,19 @@
           }
         }
       },
-      "NewOrders": {
+      "NewCart": {
         "required": [
           "email",
-          "fullname",
-          "products"
+          "emailFrom"
         ],
         "properties": {
-          "amount": {
-            "type": "number"
-          },
           "email": {
-            "type": "string"
+            "type": "string",
+            "default": "margarita.egorycheva@gmail.com"
           },
-          "fullname": {
-            "type": "string"
-          },
-          "products": {
-            "type": "object"
+          "emailFrom": {
+            "type": "string",
+            "default": "m.tukhtarov@gmail.com"
           },
           "published_at": {
             "type": "string",
@@ -578,7 +364,7 @@
   },
   "tags": [
     {
-      "name": "Orders"
+      "name": "Cart"
     }
   ]
 }

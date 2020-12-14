@@ -1,8 +1,8 @@
 {
-  "kind": "collectionType",
-  "collectionName": "orders",
+  "kind": "singleType",
+  "collectionName": "carts",
   "info": {
-    "name": "orders",
+    "name": "Cart",
     "description": ""
   },
   "options": {
@@ -11,19 +11,14 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "amount": {
-      "type": "decimal"
-    },
     "email": {
       "type": "email",
+      "default": "margarita.egorycheva@gmail.com",
       "required": true
     },
-    "fullname": {
-      "type": "string",
-      "required": true
-    },
-    "products": {
-      "type": "json",
+    "emailFrom": {
+      "type": "email",
+      "default": "m.tukhtarov@gmail.com",
       "required": true
     }
   }
