@@ -50,7 +50,9 @@
           }
         },
         "summary": "",
-        "tags": ["Orders"],
+        "tags": [
+          "Orders"
+        ],
         "parameters": [
           {
             "name": "_limit",
@@ -236,7 +238,9 @@
           }
         },
         "summary": "",
-        "tags": ["Orders"],
+        "tags": [
+          "Orders"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -301,7 +305,9 @@
           }
         },
         "summary": "",
-        "tags": ["Orders"],
+        "tags": [
+          "Orders"
+        ],
         "parameters": []
       }
     },
@@ -352,7 +358,9 @@
           }
         },
         "summary": "",
-        "tags": ["Orders"],
+        "tags": [
+          "Orders"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -412,7 +420,9 @@
           }
         },
         "summary": "",
-        "tags": ["Orders"],
+        "tags": [
+          "Orders"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -484,7 +494,9 @@
           }
         },
         "summary": "",
-        "tags": ["Orders"],
+        "tags": [
+          "Orders"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -503,7 +515,14 @@
   "components": {
     "schemas": {
       "Orders": {
-        "required": ["id", "fullname", "products", "additional", "phone"],
+        "required": [
+          "id",
+          "amount",
+          "fullname",
+          "products",
+          "additional",
+          "phone"
+        ],
         "properties": {
           "id": {
             "type": "string"
@@ -530,7 +549,13 @@
         }
       },
       "NewOrders": {
-        "required": ["fullname", "products", "additional", "phone"],
+        "required": [
+          "amount",
+          "fullname",
+          "products",
+          "additional",
+          "phone"
+        ],
         "properties": {
           "amount": {
             "type": "number"
