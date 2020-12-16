@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "orders",
   "info": {
-    "name": "orders"
+    "name": "orders",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -10,23 +11,24 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "address": {
-      "type": "string",
-      "required": true
-    },
-    "postalCode": {
-      "type": "string",
-      "required": true
-    },
-    "city": {
-      "type": "string",
-      "required": true
-    },
     "amount": {
-      "type": "decimal"
+      "type": "decimal",
+      "required": true
+    },
+    "fullname": {
+      "type": "string",
+      "required": true
     },
     "products": {
       "type": "json",
+      "required": true
+    },
+    "additional": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
       "required": true
     }
   }

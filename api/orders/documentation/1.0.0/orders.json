@@ -517,29 +517,30 @@
       "Orders": {
         "required": [
           "id",
-          "address",
-          "postalCode",
-          "city",
-          "products"
+          "amount",
+          "fullname",
+          "products",
+          "additional",
+          "phone"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "address": {
-            "type": "string"
-          },
-          "postalCode": {
-            "type": "string"
-          },
-          "city": {
-            "type": "string"
-          },
           "amount": {
             "type": "number"
           },
+          "fullname": {
+            "type": "string"
+          },
           "products": {
             "type": "object"
+          },
+          "additional": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -549,26 +550,27 @@
       },
       "NewOrders": {
         "required": [
-          "address",
-          "postalCode",
-          "city",
-          "products"
+          "amount",
+          "fullname",
+          "products",
+          "additional",
+          "phone"
         ],
         "properties": {
-          "address": {
-            "type": "string"
-          },
-          "postalCode": {
-            "type": "string"
-          },
-          "city": {
-            "type": "string"
-          },
           "amount": {
             "type": "number"
           },
+          "fullname": {
+            "type": "string"
+          },
           "products": {
             "type": "object"
+          },
+          "additional": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

@@ -2,25 +2,30 @@
   "collectionName": "components_elements_category_cards",
   "info": {
     "name": "categoryCard",
-    "icon": "atom"
+    "icon": "atom",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
       "type": "string",
-      "default": "title"
+      "default": "title",
+      "required": true
     },
     "subtitle": {
       "type": "string",
-      "default": "subtitle"
+      "default": "subtitle",
+      "required": true
     },
     "btnText": {
       "type": "string",
-      "default": "Кнопочка"
+      "default": "Кнопочка",
+      "required": true
     },
     "slug": {
       "type": "string",
-      "default": "/products/all"
+      "default": "/products/all",
+      "required": true
     },
     "image": {
       "model": "file",
@@ -29,7 +34,7 @@
         "images"
       ],
       "plugin": "upload",
-      "required": false
+      "required": true
     }
   }
 }

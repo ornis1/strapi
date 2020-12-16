@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "carts",
+  "info": {
+    "name": "Cart",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "email": {
+      "type": "email",
+      "default": "margarita.egorycheva@gmail.com",
+      "required": true
+    },
+    "emailFrom": {
+      "type": "email",
+      "default": "m.tukhtarov@gmail.com",
+      "required": true
+    }
+  }
+}

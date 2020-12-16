@@ -325,7 +325,8 @@
               "type": "object",
               "required": [
                 "id",
-                "name"
+                "name",
+                "image"
               ],
               "properties": {
                 "id": {
@@ -451,7 +452,8 @@
               "type": "object",
               "required": [
                 "id",
-                "name"
+                "name",
+                "image"
               ],
               "properties": {
                 "id": {
