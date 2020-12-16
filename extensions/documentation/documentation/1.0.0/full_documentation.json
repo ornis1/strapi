@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/15/2020 12:53:29 AM"
+    "x-generation-date": "12/16/2020 9:32:37 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -1691,7 +1691,11 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Email"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -6724,26 +6728,6 @@
           }
         }
       },
-      "Email": {
-        "required": [
-          "id"
-        ],
-        "properties": {
-          "id": {
-            "type": "string"
-          }
-        }
-      },
-      "NewEmail": {
-        "properties": {
-          "created_by": {
-            "type": "string"
-          },
-          "updated_by": {
-            "type": "string"
-          }
-        }
-      },
       "Global": {
         "required": [
           "id",
@@ -7405,9 +7389,10 @@
       "Orders": {
         "required": [
           "id",
-          "email",
           "fullname",
-          "products"
+          "products",
+          "additional",
+          "phone"
         ],
         "properties": {
           "id": {
@@ -7416,14 +7401,17 @@
           "amount": {
             "type": "number"
           },
-          "email": {
-            "type": "string"
-          },
           "fullname": {
             "type": "string"
           },
           "products": {
             "type": "object"
+          },
+          "additional": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -7433,22 +7421,26 @@
       },
       "NewOrders": {
         "required": [
-          "email",
           "fullname",
-          "products"
+          "products",
+          "additional",
+          "phone"
         ],
         "properties": {
           "amount": {
             "type": "number"
-          },
-          "email": {
-            "type": "string"
           },
           "fullname": {
             "type": "string"
           },
           "products": {
             "type": "object"
+          },
+          "additional": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

@@ -14,16 +14,20 @@
     "amount": {
       "type": "decimal"
     },
-    "email": {
-      "type": "email",
-      "required": true
-    },
     "fullname": {
       "type": "string",
       "required": true
     },
     "products": {
       "type": "json",
+      "required": true
+    },
+    "additional": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
       "required": true
     }
   }

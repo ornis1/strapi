@@ -10,7 +10,11 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Email"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -59,30 +63,6 @@
                 "$ref": "#/components/schemas/NewEmail"
               }
             }
-          }
-        }
-      }
-    }
-  },
-  "components": {
-    "schemas": {
-      "Email": {
-        "required": [
-          "id"
-        ],
-        "properties": {
-          "id": {
-            "type": "string"
-          }
-        }
-      },
-      "NewEmail": {
-        "properties": {
-          "created_by": {
-            "type": "string"
-          },
-          "updated_by": {
-            "type": "string"
           }
         }
       }

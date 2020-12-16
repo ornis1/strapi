@@ -517,9 +517,10 @@
       "Orders": {
         "required": [
           "id",
-          "email",
           "fullname",
-          "products"
+          "products",
+          "additional",
+          "phone"
         ],
         "properties": {
           "id": {
@@ -528,14 +529,17 @@
           "amount": {
             "type": "number"
           },
-          "email": {
-            "type": "string"
-          },
           "fullname": {
             "type": "string"
           },
           "products": {
             "type": "object"
+          },
+          "additional": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -545,22 +549,26 @@
       },
       "NewOrders": {
         "required": [
-          "email",
           "fullname",
-          "products"
+          "products",
+          "additional",
+          "phone"
         ],
         "properties": {
           "amount": {
             "type": "number"
-          },
-          "email": {
-            "type": "string"
           },
           "fullname": {
             "type": "string"
           },
           "products": {
             "type": "object"
+          },
+          "additional": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
