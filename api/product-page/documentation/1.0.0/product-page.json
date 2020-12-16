@@ -343,7 +343,9 @@
                     "description",
                     "coverImage",
                     "price",
-                    "name"
+                    "oldPrice",
+                    "name",
+                    "qty"
                   ],
                   "properties": {
                     "id": {
@@ -430,7 +432,9 @@
                     "description",
                     "coverImage",
                     "price",
-                    "name"
+                    "oldPrice",
+                    "name",
+                    "qty"
                   ],
                   "properties": {
                     "id": {

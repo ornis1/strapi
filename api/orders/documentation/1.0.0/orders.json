@@ -517,6 +517,7 @@
       "Orders": {
         "required": [
           "id",
+          "amount",
           "fullname",
           "products",
           "additional",
@@ -549,6 +550,7 @@
       },
       "NewOrders": {
         "required": [
+          "amount",
           "fullname",
           "products",
           "additional",

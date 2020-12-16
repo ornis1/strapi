@@ -12,7 +12,8 @@
   },
   "attributes": {
     "amount": {
-      "type": "decimal"
+      "type": "decimal",
+      "required": true
     },
     "fullname": {
       "type": "string",

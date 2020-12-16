@@ -14,13 +14,16 @@
     "Slider": {
       "type": "component",
       "repeatable": true,
-      "component": "elements.slider"
+      "component": "elements.slider",
+      "required": true
     },
     "payment": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "delivery": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "categoryCard": {
       "type": "component",

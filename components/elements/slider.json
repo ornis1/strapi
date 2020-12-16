@@ -9,15 +9,18 @@
   "attributes": {
     "title": {
       "type": "string",
-      "default": "Title"
+      "default": "Title",
+      "required": true
     },
     "subtitle": {
       "type": "string",
-      "default": "Subtitle"
+      "default": "Subtitle",
+      "required": true
     },
     "btnText": {
       "type": "string",
-      "default": "Кнопочка"
+      "default": "Кнопочка",
+      "required": true
     },
     "image": {
       "model": "file",
@@ -26,7 +29,7 @@
         "images"
       ],
       "plugin": "upload",
-      "required": false
+      "required": true
     }
   }
 }

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/16/2020 9:32:37 PM"
+    "x-generation-date": "12/16/2020 9:38:14 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6183,6 +6183,7 @@
       "Blogs": {
         "required": [
           "id",
+          "title",
           "image",
           "content",
           "slug",
@@ -6281,6 +6282,7 @@
       },
       "NewBlogs": {
         "required": [
+          "title",
           "content",
           "slug",
           "btnText"
@@ -6377,7 +6379,8 @@
               "type": "object",
               "required": [
                 "id",
-                "name"
+                "name",
+                "image"
               ],
               "properties": {
                 "id": {
@@ -6503,7 +6506,8 @@
               "type": "object",
               "required": [
                 "id",
-                "name"
+                "name",
+                "image"
               ],
               "properties": {
                 "id": {
@@ -6635,7 +6639,8 @@
             "type": "string"
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "default": "`"
           },
           "slug": {
             "type": "uid"
@@ -6649,7 +6654,9 @@
                 "description",
                 "coverImage",
                 "price",
-                "name"
+                "oldPrice",
+                "name",
+                "qty"
               ],
               "properties": {
                 "id": {
@@ -6709,7 +6716,8 @@
         ],
         "properties": {
           "name": {
-            "type": "string"
+            "type": "string",
+            "default": "`"
           },
           "slug": {
             "type": "uid"
@@ -6964,7 +6972,10 @@
       },
       "Home": {
         "required": [
-          "id"
+          "id",
+          "Slider",
+          "payment",
+          "delivery"
         ],
         "properties": {
           "id": {
@@ -6975,7 +6986,11 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "title",
+                "subtitle",
+                "btnText",
+                "image"
               ],
               "properties": {
                 "id": {
@@ -7074,7 +7089,12 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "title",
+                "subtitle",
+                "btnText",
+                "slug",
+                "image"
               ],
               "properties": {
                 "id": {
@@ -7175,13 +7195,22 @@
         }
       },
       "NewHome": {
+        "required": [
+          "Slider",
+          "payment",
+          "delivery"
+        ],
         "properties": {
           "Slider": {
             "type": "array",
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "title",
+                "subtitle",
+                "btnText",
+                "image"
               ],
               "properties": {
                 "id": {
@@ -7280,7 +7309,12 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "title",
+                "subtitle",
+                "btnText",
+                "slug",
+                "image"
               ],
               "properties": {
                 "id": {
@@ -7389,6 +7423,7 @@
       "Orders": {
         "required": [
           "id",
+          "amount",
           "fullname",
           "products",
           "additional",
@@ -7421,6 +7456,7 @@
       },
       "NewOrders": {
         "required": [
+          "amount",
           "fullname",
           "products",
           "additional",
@@ -7456,7 +7492,8 @@
       },
       "Privacy-policy": {
         "required": [
-          "id"
+          "id",
+          "value"
         ],
         "properties": {
           "id": {
@@ -7468,7 +7505,9 @@
           "seo": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "title",
+              "description"
             ],
             "properties": {
               "id": {
@@ -7556,6 +7595,9 @@
         }
       },
       "NewPrivacy-policy": {
+        "required": [
+          "value"
+        ],
         "properties": {
           "value": {
             "type": "string"
@@ -7563,7 +7605,9 @@
           "seo": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "title",
+              "description"
             ],
             "properties": {
               "id": {
@@ -7684,7 +7728,9 @@
                     "description",
                     "coverImage",
                     "price",
-                    "name"
+                    "oldPrice",
+                    "name",
+                    "qty"
                   ],
                   "properties": {
                     "id": {
@@ -7771,7 +7817,9 @@
                     "description",
                     "coverImage",
                     "price",
-                    "name"
+                    "oldPrice",
+                    "name",
+                    "qty"
                   ],
                   "properties": {
                     "id": {
@@ -7847,7 +7895,9 @@
           "description",
           "coverImage",
           "price",
-          "name"
+          "oldPrice",
+          "name",
+          "qty"
         ],
         "properties": {
           "id": {
@@ -7859,7 +7909,9 @@
           "seo": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "title",
+              "description"
             ],
             "properties": {
               "id": {
@@ -8072,7 +8124,9 @@
           "slug",
           "description",
           "price",
-          "name"
+          "oldPrice",
+          "name",
+          "qty"
         ],
         "properties": {
           "slug": {
@@ -8081,7 +8135,9 @@
           "seo": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "title",
+              "description"
             ],
             "properties": {
               "id": {

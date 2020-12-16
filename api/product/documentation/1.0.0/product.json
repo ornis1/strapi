@@ -521,7 +521,9 @@
           "description",
           "coverImage",
           "price",
-          "name"
+          "oldPrice",
+          "name",
+          "qty"
         ],
         "properties": {
           "id": {
@@ -533,7 +535,9 @@
           "seo": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "title",
+              "description"
             ],
             "properties": {
               "id": {
@@ -746,7 +750,9 @@
           "slug",
           "description",
           "price",
-          "name"
+          "oldPrice",
+          "name",
+          "qty"
         ],
         "properties": {
           "slug": {
@@ -755,7 +761,9 @@
           "seo": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "title",
+              "description"
             ],
             "properties": {
               "id": {

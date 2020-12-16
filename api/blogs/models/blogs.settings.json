@@ -14,7 +14,8 @@
     "title": {
       "type": "string",
       "default": "Blog title",
-      "unique": true
+      "unique": true,
+      "required": true
     },
     "image": {
       "model": "file",
