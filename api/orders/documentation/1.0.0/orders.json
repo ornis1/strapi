@@ -50,9 +50,7 @@
           }
         },
         "summary": "",
-        "tags": [
-          "Orders"
-        ],
+        "tags": ["Orders"],
         "parameters": [
           {
             "name": "_limit",
@@ -238,9 +236,7 @@
           }
         },
         "summary": "",
-        "tags": [
-          "Orders"
-        ],
+        "tags": ["Orders"],
         "requestBody": {
           "description": "",
           "required": true,
@@ -305,9 +301,7 @@
           }
         },
         "summary": "",
-        "tags": [
-          "Orders"
-        ],
+        "tags": ["Orders"],
         "parameters": []
       }
     },
@@ -358,9 +352,7 @@
           }
         },
         "summary": "",
-        "tags": [
-          "Orders"
-        ],
+        "tags": ["Orders"],
         "parameters": [
           {
             "name": "id",
@@ -420,9 +412,7 @@
           }
         },
         "summary": "",
-        "tags": [
-          "Orders"
-        ],
+        "tags": ["Orders"],
         "requestBody": {
           "description": "",
           "required": true,
@@ -494,9 +484,7 @@
           }
         },
         "summary": "",
-        "tags": [
-          "Orders"
-        ],
+        "tags": ["Orders"],
         "parameters": [
           {
             "name": "id",
@@ -515,13 +503,7 @@
   "components": {
     "schemas": {
       "Orders": {
-        "required": [
-          "id",
-          "amount",
-          "email",
-          "fullname",
-          "products"
-        ],
+        "required": ["id", "fullname", "products", "additional", "phone"],
         "properties": {
           "id": {
             "type": "string"
@@ -529,14 +511,17 @@
           "amount": {
             "type": "number"
           },
-          "email": {
-            "type": "string"
-          },
           "fullname": {
             "type": "string"
           },
           "products": {
             "type": "object"
+          },
+          "additional": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -545,24 +530,22 @@
         }
       },
       "NewOrders": {
-        "required": [
-          "amount",
-          "email",
-          "fullname",
-          "products"
-        ],
+        "required": ["fullname", "products", "additional", "phone"],
         "properties": {
           "amount": {
             "type": "number"
-          },
-          "email": {
-            "type": "string"
           },
           "fullname": {
             "type": "string"
           },
           "products": {
             "type": "object"
+          },
+          "additional": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
