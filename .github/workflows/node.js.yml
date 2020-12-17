@@ -32,9 +32,7 @@ jobs:
 
       - name: Start project
         env:
-          PORT: ${{secrets.PORT}}
-          HOST: ${{secrets.HOST}}
-          DOMAIN: ${{secrets.DOMAIN}}
+          DOMAIN: "167.172.248.211"
 
           CLOUDINARY_SECRET: ${{secrets.CLOUDINARY_SECRET_DEV}}
           CLOUDINARY_NAME: ${{secrets.CLOUDINARY_NAME_DEV}}

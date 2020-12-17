@@ -2,7 +2,7 @@ module.exports = ({ env }) => ({
   host: env("HOST", "0.0.0.0"),
   port: env.int("PORT", 1337),
   proxy: true,
-  url: `https://${env("DOMAIN")}/api`,
+  url: `http://${env("DOMAIN")}/api`,
   admin: {
     auth: {
       secret: env("ADMIN_JWT_SECRET", "2cd7cd8694c64d2c7747630bd0c769f7"),
