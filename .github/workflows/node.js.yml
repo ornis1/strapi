@@ -46,4 +46,4 @@ jobs:
 
           SENDGRID_API_KEY: ${{secrets.SENDGRID_API_KEY_PROD}}
         run: pm2 start ecosystem.config.js
-      - run: pm2 reload workflow
+      - run: pm2 reload back
