@@ -28,8 +28,9 @@ jobs:
         run: npm i
 
       - name: Build project
-        run: NODE_ENV=production npm run strapi build
-
+        run: NODE_ENV=production npm run build
+        env:
+          NODE_ENV: production
       - name: Start project
         env:
           DOMAIN: "167.172.248.211"
