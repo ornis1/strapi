@@ -5,9 +5,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: [production]
+    branches: [workflow-test]
   pull_request:
-    branches: [production]
+    branches: [workflow-test]
 
 jobs:
   build:
@@ -15,7 +15,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x, 14.x]
+        node-version: [14.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -23,6 +23,15 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: yarn
-      - run: yarn build
-      - run: pm2 reload back
+      - name: Install dependencies
+        run: yarn
+      - name: Build project
+        env: |
+          PORT: 1337
+          HOST: "127.0.0.1"
+          CLOUDINARY_SECRET_DEV: ${{secrets.CLOUDINARY_SECRET_DEV}}
+          CLOUDINARY_NAME_DEV: ${{secrets.CLOUDINARY_NAME_DEV}}
+          CLOUDINARY_KEY_DEV: ${{secrets.CLOUDINARY_KEY_DEV}}
+        run: NODE_ENV=development yarn build
+      - run: pm2 start ecosystem.config.js
+      - run: pm2 reload workflow
