@@ -30,7 +30,8 @@ jobs:
       - name: Build project
         run: npm run build
         env:
-          NODE_ENV: production
+          NODE_ENV: "production"
+          ASD: "aasd"
 
       - name: Start project
         env:
