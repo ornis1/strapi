@@ -28,7 +28,7 @@ jobs:
         run: npm i
 
       - name: Build project
-        run: npm run build
+        run: NODE_ENV=production npm run strapi build
 
       - name: Start project
         env:
