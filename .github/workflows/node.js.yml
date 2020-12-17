@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install dependencies
-        run: yarn
+        run: npm i
       - name: Build project
         env:
           PORT: "1337"
@@ -32,6 +32,6 @@ jobs:
           CLOUDINARY_SECRET_DEV: ${{secrets.CLOUDINARY_SECRET_DEV}}
           CLOUDINARY_NAME_DEV: ${{secrets.CLOUDINARY_NAME_DEV}}
           CLOUDINARY_KEY_DEV: ${{secrets.CLOUDINARY_KEY_DEV}}
-        run: NODE_ENV=development yarn strapi build
+        run: NODE_ENV=development npm run strapi build
       - run: pm2 start ecosystem.config.js
       - run: pm2 reload workflow
