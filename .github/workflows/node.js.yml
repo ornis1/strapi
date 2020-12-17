@@ -29,9 +29,9 @@ jobs:
         env:
           PORT: "1337"
           HOST: "127.0.0.1"
-          CLOUDINARY_SECRET_DEV: ${{secrets.CLOUDINARY_SECRET_DEV}}
-          CLOUDINARY_NAME_DEV: ${{secrets.CLOUDINARY_NAME_DEV}}
-          CLOUDINARY_KEY_DEV: ${{secrets.CLOUDINARY_KEY_DEV}}
+          CLOUDINARY_SECRET: ${{secrets.CLOUDINARY_SECRET_DEV}}
+          CLOUDINARY_NAME: ${{secrets.CLOUDINARY_NAME_DEV}}
+          CLOUDINARY_KEY: ${{secrets.CLOUDINARY_KEY_DEV}}
         run: NODE_ENV=development npm run strapi build
       - run: pm2 start ecosystem.config.js
       - run: pm2 reload workflow
