@@ -26,7 +26,9 @@ jobs:
       - name: Install dependencies
         run: yarn
       - name: Build project
-        env: |
+        env:
+          PORT: "1337"
+          HOST: "127.0.0.1"
           CLOUDINARY_SECRET_DEV: ${{secrets.CLOUDINARY_SECRET_DEV}}
           CLOUDINARY_NAME_DEV: ${{secrets.CLOUDINARY_NAME_DEV}}
           CLOUDINARY_KEY_DEV: ${{secrets.CLOUDINARY_KEY_DEV}}
