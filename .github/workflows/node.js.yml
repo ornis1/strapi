@@ -32,6 +32,6 @@ jobs:
           CLOUDINARY_SECRET_DEV: ${{secrets.CLOUDINARY_SECRET_DEV}}
           CLOUDINARY_NAME_DEV: ${{secrets.CLOUDINARY_NAME_DEV}}
           CLOUDINARY_KEY_DEV: ${{secrets.CLOUDINARY_KEY_DEV}}
-        run: NODE_ENV=development yarn build
+        run: NODE_ENV=development yarn strapi build
       - run: pm2 start ecosystem.config.js
       - run: pm2 reload workflow
