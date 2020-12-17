@@ -27,7 +27,7 @@ jobs:
         run: yarn
       - name: Build project
         env: |
-          PORT: 1337
+          PORT: "1337"
           HOST: "127.0.0.1"
           CLOUDINARY_SECRET_DEV: ${{secrets.CLOUDINARY_SECRET_DEV}}
           CLOUDINARY_NAME_DEV: ${{secrets.CLOUDINARY_NAME_DEV}}
