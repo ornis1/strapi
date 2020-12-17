@@ -1,7 +1,4 @@
 module.exports = ({ env }) => {
-  console.log(env("CLOUDINARY_NAME"));
-  console.log(env("CLOUDINARY_KEY"));
-  console.log(env("CLOUDINARY_SECRET"));
   return {
     email: {
       provider: "sendgrid",
