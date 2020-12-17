@@ -35,7 +35,7 @@ jobs:
 
       - name: Start project
         env:
-          NODE_ENV: production
+          NODE_ENV: "production"
           DOMAIN: "167.172.248.211"
 
           CLOUDINARY_SECRET: ${{secrets.CLOUDINARY_SECRET_DEV}}
