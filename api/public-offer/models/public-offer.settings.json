@@ -1,8 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "privacy_policies",
+  "collectionName": "public_offers",
   "info": {
-    "name": "PrivacyPolicy",
+    "name": "PublicOffer",
     "description": ""
   },
   "options": {

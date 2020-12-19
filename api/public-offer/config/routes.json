@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/public-offer",
+      "handler": "public-offer.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/public-offer",
+      "handler": "public-offer.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/public-offer",
+      "handler": "public-offer.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
