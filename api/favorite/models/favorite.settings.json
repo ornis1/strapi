@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "favorites",
+  "info": {
+    "name": "favorite"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta.seo"
+    }
+  }
+}

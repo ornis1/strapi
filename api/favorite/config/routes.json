@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/favorite",
+      "handler": "favorite.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/favorite",
+      "handler": "favorite.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/favorite",
+      "handler": "favorite.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
