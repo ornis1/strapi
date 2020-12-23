@@ -25,6 +25,10 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "siteName": {
+      "type": "string",
+      "required": true
     }
   }
 }
