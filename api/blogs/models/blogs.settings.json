@@ -38,6 +38,11 @@
       "type": "string",
       "default": "Read more",
       "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta.seo"
     }
   }
 }

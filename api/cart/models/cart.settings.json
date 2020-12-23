@@ -24,6 +24,11 @@
     "info": {
       "type": "richtext",
       "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta.seo"
     }
   }
 }

@@ -16,6 +16,11 @@
       "repeatable": true,
       "component": "elements.category",
       "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta.seo"
     }
   }
 }
