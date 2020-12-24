@@ -29,6 +29,11 @@
       "type": "component",
       "repeatable": false,
       "component": "meta.seo"
+    },
+    "Modal": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.modal"
     }
   }
 }

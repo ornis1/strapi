@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_elements_modals",
+  "info": {
+    "name": "Modal",
+    "icon": "bullhorn"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "btnText": {
+      "type": "string"
+    },
+    "width": {
+      "type": "integer",
+      "default": 450
+    }
+  }
+}
